@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>قمرة Full Frame · بريف خاص</title>
+<meta name="description" content="قمرة Full Frame: بنمسك البراند كله من الألف للياء. احكيلنا حكايتك في بريف خاص، والتيم هيكلمك خلال ٤٨ ساعة.">
+<meta name="theme-color" content="#0E0618">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="canonical" href="https://shotonqamra.com/ar/full-frame/">
+<link rel="alternate" hreflang="en" href="https://shotonqamra.com/full-frame/">
+<link rel="alternate" hreflang="ar" href="https://shotonqamra.com/ar/full-frame/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qamra">
+<meta property="og:url" content="https://shotonqamra.com/ar/full-frame/">
+<meta property="og:title" content="قمرة Full Frame · بريف خاص">
+<meta property="og:description" content="قمرة Full Frame: بنمسك البراند كله من الألف للياء. احكيلنا حكايتك في بريف خاص، والتيم هيكلمك خلال ٤٨ ساعة.">
+<meta property="og:image" content="https://shotonqamra.com/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&family=Tajawal:wght@500;700;800;900&display=swap">
+<style>
+/* Private brief for Qamra Full Frame: an intro "title card", five framed steps, and a closing card. Dark room ground, viewfinder corners, amber-to-pink accents. */
+:root{
+  --ink:#0E0618; --room:#160B22; --violet:#AA78FF; --pink:#FF6CAC; --amber:#FFCC78;
+  --text:#FFFFFF; --soft:#E8DEFF; --muted:#BEB0D7; --line:rgba(170,120,255,.22); --card:rgba(255,255,255,.04);
+  --grad:linear-gradient(90deg,var(--amber),var(--pink));
+  --display:'Outfit',system-ui,sans-serif; --ar:'Tajawal','Outfit',system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:radial-gradient(1200px 700px at 85% -10%,rgba(170,120,255,.16),transparent 60%),radial-gradient(900px 600px at -10% 110%,rgba(255,108,172,.10),transparent 60%),var(--ink);color:var(--text);font-family:var(--display);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+[dir="rtl"] body{font-family:var(--ar)}
+a{color:inherit}
+.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:.2em .04em;margin:-.2em -.04em}
+.shell{max-width:920px;margin:0 auto;padding:22px max(16px,env(safe-area-inset-left,0px)) 60px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mark{font-family:var(--display);font-weight:900;font-size:26px;letter-spacing:-.02em;text-decoration:none;direction:ltr;display:inline-flex;align-items:baseline}
+.mark .dot{width:7px;height:7px;border-radius:50%;background:var(--grad);margin-left:3px;display:inline-block}
+.lang{font:700 14px var(--display);color:var(--soft);background:none;border:1px solid var(--line);border-radius:999px;padding:7px 16px;cursor:pointer;text-decoration:none}
+[dir="rtl"] .lang{font-family:var(--ar)}
+
+/* viewfinder frame */
+.vf{position:relative;margin-top:28px;padding:56px 56px 44px;border-radius:28px;background:linear-gradient(#1A0F27,#150A21) padding-box,linear-gradient(135deg,rgba(255,204,120,.55),rgba(170,120,255,.25),rgba(255,108,172,.55)) border-box;border:1px solid transparent;box-shadow:0 40px 120px rgba(0,0,0,.45)}
+.vf::after{content:"";position:absolute;inset:16px;border-radius:18px;pointer-events:none;background:
+linear-gradient(var(--amber),var(--amber)) left top/26px 2px no-repeat,linear-gradient(var(--amber),var(--amber)) left top/2px 26px no-repeat,
+linear-gradient(var(--pink),var(--pink)) right top/26px 2px no-repeat,linear-gradient(var(--pink),var(--pink)) right top/2px 26px no-repeat,
+linear-gradient(var(--amber),var(--amber)) left bottom/26px 2px no-repeat,linear-gradient(var(--amber),var(--amber)) left bottom/2px 26px no-repeat,
+linear-gradient(var(--pink),var(--pink)) right bottom/26px 2px no-repeat,linear-gradient(var(--pink),var(--pink)) right bottom/2px 26px no-repeat}
+.hud{display:flex;justify-content:space-between;align-items:center;font:700 12px var(--display);letter-spacing:.22em;color:var(--muted);text-transform:uppercase;margin-bottom:26px}
+.rec{display:inline-flex;align-items:center;gap:8px;color:var(--amber)}
+.rec i{width:8px;height:8px;border-radius:50%;background:var(--pink);box-shadow:0 0 12px var(--pink);animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.25}}
+.prog{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:0 0 34px}
+.prog span{height:3px;border-radius:3px;background:rgba(170,120,255,.2);transition:background .4s}
+.prog span.on{background:var(--grad)}
+
+/* screens */
+.screen{display:none;animation:dev .6s cubic-bezier(.2,.7,.2,1)}
+.screen.on{display:block}
+@keyframes dev{from{opacity:0;filter:blur(8px);transform:translateY(14px)}to{opacity:1;filter:none;transform:none}}
+.kicker{font:800 13px var(--display);letter-spacing:.26em;color:var(--amber);text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:34px;height:1.5px;background:var(--grad)}
+[dir="rtl"] .kicker,[dir="rtl"] .hud{font-family:var(--ar);letter-spacing:0;font-size:15px}
+.title{font-family:var(--display);font-weight:900;font-size:clamp(40px,8vw,84px);line-height:1;letter-spacing:-.03em;margin:22px 0 22px;direction:ltr;text-align:start}
+[dir="rtl"] .title{text-align:right}
+.intro p{font-size:19px;color:var(--soft);max-width:640px;margin:0 0 14px}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:34px 0 38px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.promise b{display:block;font:900 26px var(--display);line-height:1.1}
+.promise span{font-size:14px;color:var(--muted)}
+h2{font-size:clamp(28px,4.6vw,42px);line-height:1.15;margin:12px 0 8px;font-weight:900;letter-spacing:-.01em}
+.hint{color:var(--muted);margin:0 0 28px}
+.field{margin:0 0 24px}
+.field>label,.field>.lbl{display:block;font-weight:700;font-size:16px;margin-bottom:10px;color:var(--soft)}
+.field>label em,.field>.lbl em{font-style:normal;color:var(--pink)}
+.field small{display:block;color:var(--muted);font-size:13px;margin-top:6px}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px;color:var(--text);font:500 17px inherit;font-family:inherit;padding:15px 18px;outline:none;transition:border-color .2s,box-shadow .2s}
+textarea{min-height:120px;resize:vertical;line-height:1.55}
+input:focus,textarea:focus{border-color:var(--violet);box-shadow:0 0 0 4px rgba(170,120,255,.15)}
+::placeholder{color:rgba(190,176,215,.55)}
+.bad{border-color:var(--pink)!important;box-shadow:0 0 0 4px rgba(255,108,172,.15)!important}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+/* choice tiles */
+.tiles{display:flex;flex-wrap:wrap;gap:10px}
+.tiles label{position:relative;cursor:pointer}
+.tiles input{position:absolute;opacity:0;pointer-events:none}
+.tiles span{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-weight:600;font-size:15px;color:var(--soft);transition:all .2s}
+.tiles label:hover span{border-color:var(--violet)}
+.tiles input:checked+span{background:linear-gradient(#24143A,#24143A) padding-box,var(--grad) border-box;border:1px solid transparent;color:#fff}
+.tiles input:checked+span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--grad)}
+.tiles input:focus-visible+span{outline:2px solid var(--violet);outline-offset:2px}
+.tiles.big{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tiles.big span{display:flex;flex-direction:column;align-items:flex-start;border-radius:16px;padding:16px 18px;gap:2px;height:100%}
+.tiles.big span::before{display:none}
+.tiles.big span b{font-size:16px}
+.tiles.big span small{font-weight:500;color:var(--muted);font-size:13px}
+.tiles.big input:checked+span small{color:var(--soft)}
+.groupbad span{border-color:rgba(255,108,172,.6)}
+/* nav */
+.nav[hidden]{display:none!important}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.btn{appearance:none;border:1px solid var(--line);background:none;color:var(--soft);font:800 16px var(--display);padding:15px 28px;border-radius:999px;cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+[dir="rtl"] .btn{font-family:var(--ar)}
+.btn.primary{background:var(--grad);border:0;color:#1A0B26;box-shadow:0 10px 40px rgba(255,108,172,.25)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 16px 50px rgba(255,108,172,.35)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.arr{display:inline-block}
+[dir="rtl"] .arr{transform:scaleX(-1)}
+.err{color:var(--pink);font-size:14px;min-height:20px;margin-top:10px}
+/* closing */
+.done{text-align:center;padding:20px 0 8px}
+.done .title{text-align:center!important;font-size:clamp(36px,6.4vw,64px)}
+[dir="rtl"] .done .title{font-family:var(--ar);direction:rtl;letter-spacing:0}
+.done p{color:var(--soft);font-size:19px;max-width:560px;margin:0 auto 14px}
+.ref{display:inline-block;margin:18px 0 26px;padding:12px 22px;border:1px dashed rgba(255,204,120,.5);border-radius:12px;font:800 18px var(--display);letter-spacing:.14em;color:var(--amber);direction:ltr}
+.foot{text-align:center;color:var(--muted);font-size:13px;margin-top:26px}
+@media (max-width:700px){
+  .vf{padding:40px 24px 30px;border-radius:22px}.vf::after{inset:10px}
+  .two,.tiles.big{grid-template-columns:1fr}
+  .promise{grid-template-columns:1fr;gap:12px}
+  .nav .btn{padding:14px 22px}
+}
+@media (prefers-reduced-motion:reduce){.screen{animation:none}.rec i{animation:none}}
+</style>
+
+</head>
+<body>
+<div class="shell">
+  <div class="bar">
+    <a class="mark" href="/ar/" aria-label="Qamra home"><span class="g">q</span>amra<span class="dot"></span></a>
+    <a class="lang" id="lang" href="/full-frame/" hreflang="en" lang="en">English</a>
+  </div>
+
+  <form class="vf" id="brief" action="https://formspree.io/f/xeaglawb" method="POST" novalidate>
+    <input type="hidden" name="_subject" id="subj" value="Full Frame brief">
+    <input type="hidden" name="reference" id="refin" value="">
+    <input type="hidden" name="page_language" id="plang" value="en">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+
+    <div class="hud" id="hud"><span class="rec"><i></i><span data-en="PRIVATE BRIEF" data-ar="بريف خاص">بريف خاص</span></span><span id="fc">كادر 00 / 05</span></div>
+    <div class="prog" id="prog" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+    <!-- 0 intro -->
+    <section class="screen intro on" data-s="0">
+      <div class="kicker" data-en="Our full service" data-ar="خدمتنا الكاملة">خدمتنا الكاملة</div>
+      <h1 class="title">Qamra <span class="g">Full Frame</span></h1>
+      <p data-en="For brands that want everything done right, in one place: identity, design, shoots, content, pages and ads, by one team with one vision." data-ar="للبراندات اللي عايزة كل حاجة تتعمل صح، في مكان واحد: الهوية، التصميم، التصوير، المحتوى، الصفحات، والإعلانات، بتيم واحد ورؤية واحدة.">للبراندات اللي عايزة كل حاجة تتعمل صح، في مكان واحد: الهوية، التصميم، التصوير، المحتوى، الصفحات، والإعلانات، بتيم واحد ورؤية واحدة.</p>
+      <p data-en="We take on a limited number of Full Frame brands at a time, so each one gets our full attention. This brief takes about ten minutes, and we read every word." data-ar="بناخد عدد محدود من براندات Full Frame في نفس الوقت، علشان كل براند ياخد اهتمامنا كله. البريف ده بياخد حوالي عشر دقايق، وإحنا بنقرا كل كلمة فيه.">بناخد عدد محدود من براندات Full Frame في نفس الوقت، علشان كل براند ياخد اهتمامنا كله. البريف ده بياخد حوالي عشر دقايق، وإحنا بنقرا كل كلمة فيه.</p>
+      <div class="promise">
+        <div><b class="g">10 min</b><span data-en="to tell us your story" data-ar="تحكيلنا فيهم حكايتك">تحكيلنا فيهم حكايتك</span></div>
+        <div><b class="g">48 h</b><span data-en="for a personal call from our team" data-ar="ونكلمك بنفسنا">ونكلمك بنفسنا</span></div>
+        <div><b class="g">1 team</b><span data-en="from the first idea to the final post" data-ar="من أول فكرة لحد آخر بوست">من أول فكرة لحد آخر بوست</span></div>
+      </div>
+      <button class="btn primary" type="button" data-next><span data-en="Begin the brief" data-ar="ابدأ البريف">ابدأ البريف</span> <span class="arr">→</span></button>
+    </section>
+
+    <!-- 1 brand -->
+    <section class="screen" data-s="1">
+      <div class="kicker" data-en="The brand" data-ar="البراند">البراند</div>
+      <h2 data-en="Let’s meet your brand." data-ar="خلينا نتعرف على البراند.">خلينا نتعرف على البراند.</h2>
+      <p class="hint" data-en="The basics first: who you are and where you stand today." data-ar="الأساسيات الأول: إنتو مين، وواقفين فين النهارده.">الأساسيات الأول: إنتو مين، وواقفين فين النهارده.</p>
+      <div class="field"><label for="brand"><span data-en="Brand name" data-ar="اسم البراند">اسم البراند</span> <em>*</em></label><input type="text" id="brand" name="brand_name" required data-en-ph="Your brand, or a working name" data-ar-ph="اسم البراند، أو اسم مبدئي" placeholder="اسم البراند، أو اسم مبدئي"></div>
+      <div class="field"><div class="lbl"><span data-en="Industry" data-ar="المجال">المجال</span> <em>*</em></div>
+        <div class="tiles" data-req="industry">
+          <label><input type="radio" name="industry" value="Food & beverage"><span data-en="Food & beverage" data-ar="أكل ومشروبات">أكل ومشروبات</span></label>
+          <label><input type="radio" name="industry" value="Fashion & beauty"><span data-en="Fashion & beauty" data-ar="فاشون وبيوتي">فاشون وبيوتي</span></label>
+          <label><input type="radio" name="industry" value="Real estate"><span data-en="Real estate" data-ar="عقارات">عقارات</span></label>
+          <label><input type="radio" name="industry" value="Health & fitness"><span data-en="Health & fitness" data-ar="صحة ولياقة">صحة ولياقة</span></label>
+          <label><input type="radio" name="industry" value="Tech & apps"><span data-en="Tech & apps" data-ar="تكنولوجيا وتطبيقات">تكنولوجيا وتطبيقات</span></label>
+          <label><input type="radio" name="industry" value="Retail & e-commerce"><span data-en="Retail & e-commerce" data-ar="بيع وأونلاين">بيع وأونلاين</span></label>
+          <label><input type="radio" name="industry" value="Hospitality & travel"><span data-en="Hospitality & travel" data-ar="فنادق وسياحة">فنادق وسياحة</span></label>
+          <label><input type="radio" name="industry" value="Other"><span data-en="Something else" data-ar="حاجة تانية">حاجة تانية</span></label>
+        </div></div>
+      <div class="field"><div class="lbl"><span data-en="Where is the brand today?" data-ar="البراند فين النهارده؟">البراند فين النهارده؟</span> <em>*</em></div>
+        <div class="tiles big" data-req="stage">
+          <label><input type="radio" name="stage" value="Just an idea"><span><b data-en="Just an idea" data-ar="لسه فكرة">لسه فكرة</b><small data-en="Nothing built yet" data-ar="لسه مفيش حاجة اتعملت">لسه مفيش حاجة اتعملت</small></span></label>
+          <label><input type="radio" name="stage" value="Launching soon"><span><b data-en="Launching soon" data-ar="هننزل قريب">هننزل قريب</b><small data-en="Getting ready to open" data-ar="بنجهز للافتتاح">بنجهز للافتتاح</small></span></label>
+          <label><input type="radio" name="stage" value="Running, needs a refresh"><span><b data-en="Running, needs a refresh" data-ar="شغالين، ومحتاجين تجديد">شغالين، ومحتاجين تجديد</b><small data-en="A new look and a new voice" data-ar="شكل جديد وصوت جديد">شكل جديد وصوت جديد</small></span></label>
+          <label><input type="radio" name="stage" value="Running, ready to grow"><span><b data-en="Running, ready to grow" data-ar="شغالين، وعايزين نكبر">شغالين، وعايزين نكبر</b><small data-en="More reach, more sales" data-ar="وصول أكتر، ومبيعات أكتر">وصول أكتر، ومبيعات أكتر</small></span></label>
+        </div></div>
+    </section>
+
+    <!-- 2 vision -->
+    <section class="screen" data-s="2">
+      <div class="kicker" data-en="The vision" data-ar="الرؤية">الرؤية</div>
+      <h2 data-en="Tell us the story." data-ar="احكيلنا الحكاية.">احكيلنا الحكاية.</h2>
+      <p class="hint" data-en="Write the way you would talk to us. There are no wrong answers here." data-ar="اكتب كأنك بتكلمنا. مفيش إجابة غلط هنا.">اكتب كأنك بتكلمنا. مفيش إجابة غلط هنا.</p>
+      <div class="field"><label for="about"><span data-en="What is your brand about, and why does it exist?" data-ar="البراند بيقدم إيه، وليه موجود؟">البراند بيقدم إيه، وليه موجود؟</span> <em>*</em></label><textarea id="about" name="about" required data-en-ph="What you offer, what makes you different, and where you want to be" data-ar-ph="بتقدموا إيه، إيه اللي يميزكم، وعايزين توصلوا لفين" placeholder="بتقدموا إيه، إيه اللي يميزكم، وعايزين توصلوا لفين"></textarea></div>
+      <div class="field"><label for="aud"><span data-en="Who is it for?" data-ar="البراند ده لمين؟">البراند ده لمين؟</span></label><textarea id="aud" name="audience" style="min-height:90px" data-en-ph="Age, place, lifestyle, what they care about" data-ar-ph="السن، المكان، أسلوب الحياة، وبيهتموا بإيه" placeholder="السن، المكان، أسلوب الحياة، وبيهتموا بإيه"></textarea></div>
+      <div class="two">
+        <div class="field"><label for="words"><span data-en="Three words for how it should feel" data-ar="تلات كلمات توصف إحساس البراند">تلات كلمات توصف إحساس البراند</span></label><input type="text" id="words" name="three_words" data-en-ph="Bold, warm, premium" data-ar-ph="جريء، دافي، فخم" placeholder="جريء، دافي، فخم"></div>
+        <div class="field"><label for="refs"><span data-en="Brands you admire" data-ar="براندات بتحبها">براندات بتحبها</span></label><input type="text" id="refs" name="references" data-en-ph="Names or links" data-ar-ph="أسماء أو لينكات" placeholder="أسماء أو لينكات"></div>
+      </div>
+    </section>
+
+    <!-- 3 now -->
+    <section class="screen" data-s="3">
+      <div class="kicker" data-en="Where you are now" data-ar="إنتو فين دلوقتي">إنتو فين دلوقتي</div>
+      <h2 data-en="What’s already in the frame?" data-ar="إيه اللي موجود في الكادر بالفعل؟">إيه اللي موجود في الكادر بالفعل؟</h2>
+      <p class="hint" data-en="Pick everything you already have. We will build on it, or rebuild it if it needs to be." data-ar="اختار كل اللي عندك. هنبني عليه، أو نعيد بناءه لو محتاج.">اختار كل اللي عندك. هنبني عليه، أو نعيد بناءه لو محتاج.</p>
+      <div class="field">
+        <div class="tiles">
+          <label><input type="checkbox" name="already_have" value="Name"><span data-en="Name" data-ar="الاسم">الاسم</span></label>
+          <label><input type="checkbox" name="already_have" value="Logo"><span data-en="Logo" data-ar="اللوجو">اللوجو</span></label>
+          <label><input type="checkbox" name="already_have" value="Visual identity"><span data-en="Visual identity" data-ar="هوية بصرية">هوية بصرية</span></label>
+          <label><input type="checkbox" name="already_have" value="Website"><span data-en="Website" data-ar="موقع">موقع</span></label>
+          <label><input type="checkbox" name="already_have" value="Social pages"><span data-en="Social pages" data-ar="صفحات سوشيال">صفحات سوشيال</span></label>
+          <label><input type="checkbox" name="already_have" value="Photos & videos"><span data-en="Photos & videos" data-ar="صور وفيديوهات">صور وفيديوهات</span></label>
+          <label><input type="checkbox" name="already_have" value="Nothing yet"><span data-en="Nothing yet" data-ar="لسه ولا حاجة">لسه ولا حاجة</span></label>
+        </div></div>
+      <div class="field"><label for="links"><span data-en="Where can we see you today?" data-ar="نقدر نشوفكم فين النهارده؟">نقدر نشوفكم فين النهارده؟</span></label><input type="text" id="links" name="links" data-en-ph="Instagram, website, any link" data-ar-ph="إنستجرام، موقع، أي لينك" placeholder="إنستجرام، موقع، أي لينك"><small data-en="Optional" data-ar="اختياري">اختياري</small></div>
+    </section>
+
+    <!-- 4 scope -->
+    <section class="screen" data-s="4">
+      <div class="kicker" data-en="Scope and timing" data-ar="النطاق والتوقيت">النطاق والتوقيت</div>
+      <h2 data-en="Set the scene." data-ar="خلينا نجهز المشهد.">خلينا نجهز المشهد.</h2>
+      <p class="hint" data-en="Full Frame covers everything. Tell us what matters most first, and when." data-ar="الـ Full Frame بيغطي كل حاجة. قولنا إيه الأهم الأول، وإمتى.">الـ Full Frame بيغطي كل حاجة. قولنا إيه الأهم الأول، وإمتى.</p>
+      <div class="field"><div class="lbl" data-en="What matters most first?" data-ar="إيه الأهم الأول؟">إيه الأهم الأول؟</div>
+        <div class="tiles">
+          <label><input type="checkbox" name="priorities" value="Identity & design"><span data-en="Identity & design" data-ar="الهوية والتصميم">الهوية والتصميم</span></label>
+          <label><input type="checkbox" name="priorities" value="Photo & video"><span data-en="Photo & video" data-ar="التصوير والفيديو">التصوير والفيديو</span></label>
+          <label><input type="checkbox" name="priorities" value="Social media"><span data-en="Social media" data-ar="السوشيال ميديا">السوشيال ميديا</span></label>
+          <label><input type="checkbox" name="priorities" value="Ads & growth"><span data-en="Ads & growth" data-ar="الإعلانات والنمو">الإعلانات والنمو</span></label>
+          <label><input type="checkbox" name="priorities" value="Website"><span data-en="Website" data-ar="الموقع">الموقع</span></label>
+        </div></div>
+      <div class="field"><div class="lbl"><span data-en="When do you want to start?" data-ar="عايز تبدأ إمتى؟">عايز تبدأ إمتى؟</span> <em>*</em></div>
+        <div class="tiles" data-req="timeline">
+          <label><input type="radio" name="timeline" value="As soon as possible"><span data-en="As soon as possible" data-ar="في أقرب وقت">في أقرب وقت</span></label>
+          <label><input type="radio" name="timeline" value="Within a month"><span data-en="Within a month" data-ar="خلال شهر">خلال شهر</span></label>
+          <label><input type="radio" name="timeline" value="In 1 to 3 months"><span data-en="In 1 to 3 months" data-ar="من شهر لتلات شهور">من شهر لتلات شهور</span></label>
+          <label><input type="radio" name="timeline" value="Flexible"><span data-en="Flexible" data-ar="مرن">مرن</span></label>
+        </div></div>
+      <div class="field"><div class="lbl"><span data-en="Monthly investment" data-ar="الميزانية الشهرية">الميزانية الشهرية</span> <em>*</em></div>
+        <div class="tiles" data-req="budget">
+          <label><input type="radio" name="monthly_budget" value="Under 25K EGP"><span data-en="Under 25K EGP" data-ar="أقل من 25 ألف جنيه">أقل من 25 ألف جنيه</span></label>
+          <label><input type="radio" name="monthly_budget" value="25K to 50K EGP"><span data-en="25K to 50K EGP" data-ar="من 25 لـ 50 ألف جنيه">من 25 لـ 50 ألف جنيه</span></label>
+          <label><input type="radio" name="monthly_budget" value="50K to 100K EGP"><span data-en="50K to 100K EGP" data-ar="من 50 لـ 100 ألف جنيه">من 50 لـ 100 ألف جنيه</span></label>
+          <label><input type="radio" name="monthly_budget" value="Over 100K EGP"><span data-en="Over 100K EGP" data-ar="أكتر من 100 ألف جنيه">أكتر من 100 ألف جنيه</span></label>
+          <label><input type="radio" name="monthly_budget" value="Let's discuss"><span data-en="Let’s discuss" data-ar="نتكلم فيها">نتكلم فيها</span></label>
+        </div><small data-en="This helps us shape the right plan. It stays between us." data-ar="ده بيساعدنا نرسم الخطة المناسبة، وبيفضل بينا.">ده بيساعدنا نرسم الخطة المناسبة، وبيفضل بينا.</small></div>
+    </section>
+
+    <!-- 5 you -->
+    <section class="screen" data-s="5">
+      <div class="kicker" data-en="The last frame" data-ar="آخر كادر">آخر كادر</div>
+      <h2 data-en="And you?" data-ar="وإنت؟">وإنت؟</h2>
+      <p class="hint" data-en="A member of our team will reach out personally within 48 hours." data-ar="حد من التيم هيتواصل معاك بنفسه خلال 48 ساعة.">حد من التيم هيتواصل معاك بنفسه خلال 48 ساعة.</p>
+      <div class="two">
+        <div class="field"><label for="nm"><span data-en="Your name" data-ar="اسمك">اسمك</span> <em>*</em></label><input type="text" id="nm" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="role"><span data-en="Your role" data-ar="دورك في البراند">دورك في البراند</span></label><input type="text" id="role" name="role" data-en-ph="Founder, marketing lead…" data-ar-ph="مؤسس، مسؤول تسويق…" placeholder="مؤسس، مسؤول تسويق…"></div>
+        <div class="field"><label for="wa"><span data-en="WhatsApp or phone" data-ar="واتساب أو موبايل">واتساب أو موبايل</span> <em>*</em></label><input type="tel" id="wa" name="phone" required autocomplete="tel" dir="ltr"></div>
+        <div class="field"><label for="em"><span data-en="Email" data-ar="الإيميل">الإيميل</span></label><input type="email" id="em" name="email" autocomplete="email" dir="ltr"></div>
+      </div>
+      <div class="field"><div class="lbl" data-en="How should we reach you?" data-ar="نتواصل معاك إزاي؟">نتواصل معاك إزاي؟</div>
+        <div class="tiles">
+          <label><input type="radio" name="contact_by" value="WhatsApp" checked><span data-en="WhatsApp" data-ar="واتساب">واتساب</span></label>
+          <label><input type="radio" name="contact_by" value="Phone call"><span data-en="Phone call" data-ar="مكالمة">مكالمة</span></label>
+          <label><input type="radio" name="contact_by" value="Email"><span data-en="Email" data-ar="إيميل">إيميل</span></label>
+          <label><input type="radio" name="contact_by" value="In-person meeting"><span data-en="In-person meeting" data-ar="مقابلة">مقابلة</span></label>
+        </div></div>
+      <div class="field"><label for="heard"><span data-en="How did you hear about Qamra?" data-ar="عرفت قمرة منين؟">عرفت قمرة منين؟</span></label><input type="text" id="heard" name="heard_from"></div>
+    </section>
+
+    <!-- 6 done -->
+    <section class="screen done" data-s="6">
+      <div class="kicker" style="justify-content:center" data-en="Brief received" data-ar="البريف وصل">البريف وصل</div>
+      <h2 class="title"><span data-en="Your brief is in the" data-ar="البريف بتاعك جوه">البريف بتاعك جوه</span> <span class="g" data-en="qamra." data-ar="القمرة.">القمرة.</span></h2>
+      <p data-en="Thank you. We will develop it carefully, and a member of our team will reach out personally within 48 hours." data-ar="شكرًا. هندرسه كويس، وحد من التيم هيتواصل معاك بنفسه خلال 48 ساعة.">شكرًا. هندرسه كويس، وحد من التيم هيتواصل معاك بنفسه خلال 48 ساعة.</p>
+      <div class="ref" id="refout">QFF-0000</div>
+      <p style="font-size:15px;color:var(--muted)" data-en="Keep this reference. Mention it whenever you talk to us." data-ar="احتفظ بالرقم ده، واذكره لما تكلمنا.">احتفظ بالرقم ده، واذكره لما تكلمنا.</p>
+      <div style="margin-top:26px"><a class="btn" href="/ar/" data-en="Back to Qamra" data-ar="ارجع لقمرة">ارجع لقمرة</a></div>
+    </section>
+
+    <div class="err" id="err" role="alert"></div>
+    <div class="nav" id="nav" hidden>
+      <button class="btn" type="button" id="back"><span class="arr">←</span> <span data-en="Back" data-ar="رجوع">رجوع</span></button>
+      <button class="btn primary" type="button" id="next"><span id="nextl" data-en="Next" data-ar="التالي">التالي</span> <span class="arr">→</span></button>
+    </div>
+  </form>
+  <div class="foot">© 2026 Qamra · <span data-en="Your answers stay private and are only read by our team." data-ar="إجاباتك سرية، ومحدش بيقراها غير التيم بتاعنا.">إجاباتك سرية، ومحدش بيقراها غير التيم بتاعنا.</span></div>
+</div>
+<script>
+(function(){
+  var root=document.documentElement, form=document.getElementById('brief');
+  var screens=[].slice.call(form.querySelectorAll('.screen')), cur=0, LAST=5;
+  var nav=document.getElementById('nav'), next=document.getElementById('next'), back=document.getElementById('back');
+  var err=document.getElementById('err'), fc=document.getElementById('fc'), bars=[].slice.call(document.querySelectorAll('#prog span'));
+  var T={en:{next:'Next',send:'Send the brief',sending:'Sending…',req:'Please complete the highlighted fields.',fail:'Something went wrong. Please try again, or message us on WhatsApp.',frame:'FRAME'},
+         ar:{next:'التالي',send:'ابعت البريف',sending:'بيتبعت…',req:'كمّل الخانات اللي متعلم عليها.',fail:'حصلت مشكلة. جرب تاني، أو كلمنا على الواتساب.',frame:'كادر'}};
+  function L(){return root.lang==='ar'?'ar':'en'}
+  function pad(n){return (n<10?'0':'')+n}
+  function show(i){
+    screens.forEach(function(s){s.classList.toggle('on',+s.dataset.s===i)}); cur=i; err.textContent='';
+    nav.hidden=(i===0||i===6); bars.forEach(function(b,k){b.classList.toggle('on',k<i&&i<6||i===6)});
+    fc.textContent=T[L()].frame+' '+pad(Math.min(i,5))+' / 05';
+    var nl=document.getElementById('nextl'); nl.textContent=i===LAST?T[L()].send:T[L()].next;
+    if(i>0){var r=form.getBoundingClientRect(); if(r.top<0) window.scrollTo({top:window.scrollY+r.top-20,behavior:'smooth'});}
+    var f=screens[i].querySelector('input[type=text],textarea'); if(f&&i>0&&i<6&&window.matchMedia('(min-width:701px)').matches) setTimeout(function(){f.focus({preventScroll:true})},350);
+  }
+  function valid(i){
+    var ok=true, s=screens[i];
+    s.querySelectorAll('[required]').forEach(function(el){var b=!el.value.trim(); el.classList.toggle('bad',b); if(b)ok=false;});
+    s.querySelectorAll('[data-req]').forEach(function(g){var b=!g.querySelector('input:checked'); g.classList.toggle('groupbad',b); if(b)ok=false;});
+    if(!ok){err.textContent=T[L()].req; var f=s.querySelector('.bad,.groupbad'); if(f) f.scrollIntoView({behavior:'smooth',block:'center'});}
+    return ok;
+  }
+  form.addEventListener('input',function(e){var t=e.target; t.classList&&t.classList.remove('bad'); var g=t.closest&&t.closest('[data-req]'); if(g)g.classList.remove('groupbad'); if(!form.querySelector('.bad,.groupbad'))err.textContent='';});
+  form.addEventListener('change',function(e){var g=e.target.closest('[data-req]'); if(g)g.classList.remove('groupbad');});
+  form.querySelector('[data-next]').addEventListener('click',function(){show(1)});
+  back.addEventListener('click',function(){if(cur>1)show(cur-1)});
+  next.addEventListener('click',function(){ if(!valid(cur))return; if(cur<LAST)show(cur+1); else send(); });
+  form.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.tagName==='INPUT'){e.preventDefault(); next.click();}});
+  form.addEventListener('submit',function(e){e.preventDefault()});
+  function send(){
+    var d=new Date(), ref='QFF-'+String(d.getFullYear()).slice(2)+pad(d.getMonth()+1)+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
+    document.getElementById('refin').value=ref;
+    document.getElementById('plang').value=L();
+    document.getElementById('subj').value='Full Frame brief · '+(document.getElementById('brand').value.trim()||'New brand')+' · '+ref;
+    var nl=document.getElementById('nextl'); next.disabled=true; nl.textContent=T[L()].sending;
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+      .then(function(r){ if(!r.ok) throw 0; document.getElementById('refout').textContent=ref; show(6); })
+      .catch(function(){ err.textContent=T[L()].fail; })
+      .then(function(){ next.disabled=false; if(cur===LAST) nl.textContent=T[L()].send; });
+  }
+  // language toggle (preview only; the hosted pages are separate English and Arabic pages)
+  var btn=document.getElementById('lang');
+  function setLang(l){
+    root.lang=l; root.dir=l==='ar'?'rtl':'ltr';
+    document.querySelectorAll('[data-en]').forEach(function(el){el.textContent=el.getAttribute('data-'+l)});
+    document.querySelectorAll('[data-en-ph]').forEach(function(el){el.placeholder=el.getAttribute('data-'+l+'-ph')});
+    if(btn.tagName==='BUTTON') btn.textContent=l==='ar'?'English':'عربي';
+    show(cur);
+  }
+  if(btn.tagName==='BUTTON') btn.addEventListener('click',function(){setLang(L()==='ar'?'en':'ar')});
+  show(0);
+})();
+</script>
+
+</body>
+</html>

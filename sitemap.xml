@@ -2,4 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://shotonqamra.com/</loc><xhtml:link rel="alternate" hreflang="ar" href="https://shotonqamra.com/ar/"/><xhtml:link rel="alternate" hreflang="en" href="https://shotonqamra.com/"/><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://shotonqamra.com/ar/</loc><xhtml:link rel="alternate" hreflang="en" href="https://shotonqamra.com/"/><xhtml:link rel="alternate" hreflang="ar" href="https://shotonqamra.com/ar/"/><lastmod>2026-11-21</lastmod></url>
+  <url><loc>https://shotonqamra.com/full-frame/</loc><xhtml:link rel="alternate" hreflang="ar" href="https://shotonqamra.com/ar/full-frame/"/><lastmod>2026-11-21</lastmod></url>
+  <url><loc>https://shotonqamra.com/ar/full-frame/</loc><xhtml:link rel="alternate" hreflang="en" href="https://shotonqamra.com/full-frame/"/><lastmod>2026-11-21</lastmod></url>
 </urlset>
