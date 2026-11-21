@@ -55,7 +55,7 @@ section{padding-block:clamp(72px,10vw,128px);border-top:1px solid var(--line)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:rgba(22,11,34,.86)}
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgba(22,11,34,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;gap:24px;height:64px}
-.mark{font-weight:900;font-size:26px;letter-spacing:-.04em;text-decoration:none;display:inline-flex;align-items:baseline;direction:ltr}
+.mark{font-family:var(--display);font-weight:900;font-size:26px;letter-spacing:-.04em;text-decoration:none;display:inline-flex;align-items:baseline;direction:ltr}
 .mark .dot{width:.24em;height:.24em;border-radius:50%;background:var(--grad);margin-left:.08em;display:inline-block}
 nav ul{display:flex;gap:22px;list-style:none;margin:0 auto 0 0;padding:0}
 [dir="rtl"] nav ul{margin:0 0 0 auto}
@@ -70,7 +70,7 @@ nav ul a:hover,nav ul a:focus-visible{color:var(--text)}
 .hero{position:relative;overflow:hidden;border-top:0;padding-block:clamp(90px,14vw,170px) clamp(70px,10vw,120px);
   background:radial-gradient(60% 70% at 82% 0%,rgba(255,204,120,.20),transparent 60%),radial-gradient(50% 60% at 68% 12%,rgba(255,108,172,.16),transparent 60%),radial-gradient(70% 80% at 50% 60%,#2a1248 0%,var(--room) 70%)}
 .hero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
-.logo{display:inline-flex;align-items:baseline;direction:ltr;font-weight:900;font-size:clamp(84px,17vw,210px);line-height:1;letter-spacing:-.05em}
+.logo{display:inline-flex;align-items:baseline;direction:ltr;font-family:var(--display);font-weight:900;font-size:clamp(84px,17vw,210px);line-height:1;letter-spacing:-.05em}
 .logo .q{display:inline-block;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:.18em .03em;margin:-.18em -.03em;animation:qpop .7s cubic-bezier(.2,1.6,.4,1) both}
 .logo .amra{display:inline-block;overflow:hidden;max-width:0;white-space:nowrap;animation:unfold .7s cubic-bezier(.65,0,.35,1) .85s forwards}
 .logo .dot{display:inline-block;width:.19em;height:.19em;border-radius:50%;background:var(--grad);margin-left:.06em;box-shadow:0 0 .4em rgba(255,170,140,.55);animation:dotpop .45s cubic-bezier(.2,1.8,.4,1) .35s both, land .5s ease-out 1.55s}
