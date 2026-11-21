@@ -141,6 +141,8 @@ textarea{min-height:120px;resize:vertical}
 .vbox iframe{width:100%;height:100%;border:0;display:block}
 .vbox .x{position:absolute;top:max(14px,env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px));width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(22,11,34,.9);color:#fff;font:700 22px var(--display);cursor:pointer}
 .vbox .yt{position:absolute;bottom:max(14px,env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);color:var(--soft);font-weight:700;font-size:14px}
+[dir="rtl"] .eyebrow,[dir="rtl"] .sub,[dir="rtl"] .ser b,[dir="rtl"] .way small,[dir="rtl"] .chip,[dir="rtl"] .copy,[dir="rtl"] .btn,[dir="rtl"] input,[dir="rtl"] select,[dir="rtl"] textarea{font-family:var(--ar);letter-spacing:0}
+[dir="rtl"] .sub{font-size:16px}
 footer{border-top:1px solid var(--line);padding-block:40px}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
 .socials{display:flex;gap:16px;flex-wrap:wrap}
@@ -170,7 +172,7 @@ footer small{color:var(--muted)}
   <div class="wrap">
     <h1 class="logo" aria-label="qamra"><span class="q">q</span><span class="amra">amra</span><span class="dot"></span></h1>
     <div class="tag" data-en="Light in. Story out." data-ar="نور بيدخل، وحكاية بتطلع.">Light in. Story out.</div>
-    <div class="sub">PHOTOGRAPHY · FILM · PRODUCTION · CAIRO</div>
+    <div class="sub" data-en="PHOTOGRAPHY · FILM · PRODUCTION · CAIRO" data-ar="تصوير · أفلام · إنتاج · القاهرة">PHOTOGRAPHY · FILM · PRODUCTION · CAIRO</div>
     <div class="cta">
       <a class="btn primary" href="#contact" data-en="Book a shoot" data-ar="احجز تصوير">Book a shoot</a>
       <a class="btn" href="#show" data-en="Watch Tarek’s Take" data-ar="اتفرج على Tarek’s Take">Watch Tarek’s Take</a>
@@ -234,9 +236,9 @@ footer small{color:var(--muted)}
       <a class="btn" href="#contact" data-en="Follow @shotonqamra" data-ar="تابع ‎@shotonqamra">Follow @shotonqamra</a>
     </div>
     <div class="series">
-      <div class="ser on"><b>SERIES 1</b><strong data-en="Camera & Photography Basics" data-ar="أساسيات الكاميرا والتصوير">Camera & Photography Basics</strong><small data-en="Now airing" data-ar="بتتعرض دلوقتي">Now airing</small></div>
-      <div class="ser"><b>SERIES 2</b><strong data-en="Shooting with Camera & Gimbal" data-ar="التصوير بالكاميرا والجمبل">Shooting with Camera & Gimbal</strong><small data-en="Coming next" data-ar="قريبًا">Coming next</small></div>
-      <div class="ser"><b>SERIES 3</b><strong data-en="Editing" data-ar="المونتاج">Editing</strong><small data-en="Coming later" data-ar="بعدها">Coming later</small></div>
+      <div class="ser on"><b data-en="SERIES 1" data-ar="السلسلة الأولى">SERIES 1</b><strong data-en="Camera & Photography Basics" data-ar="أساسيات الكاميرا والتصوير">Camera & Photography Basics</strong><small data-en="Now airing" data-ar="بتتعرض دلوقتي">Now airing</small></div>
+      <div class="ser"><b data-en="SERIES 2" data-ar="السلسلة التانية">SERIES 2</b><strong data-en="Shooting with Camera & Gimbal" data-ar="التصوير بالكاميرا والجمبل">Shooting with Camera & Gimbal</strong><small data-en="Coming next" data-ar="قريبًا">Coming next</small></div>
+      <div class="ser"><b data-en="SERIES 3" data-ar="السلسلة التالتة">SERIES 3</b><strong data-en="Editing" data-ar="المونتاج">Editing</strong><small data-en="Coming later" data-ar="بعدها">Coming later</small></div>
     </div>
     <div class="eps">
       <a class="ep play" href="https://www.youtube.com/shorts/OO6G996nrPk" target="_blank" rel="noopener" data-yt="OO6G996nrPk"><div class="thumb"><img src="img/ep1.jpg" alt="Episode 1 cover: Aperture" loading="lazy"><span class="pbtn" aria-hidden="true"></span></div><div class="meta"><div class="no">S1 · E01</div><div class="ti">سر الصورة المقلوبة · Aperture</div></div></a>
@@ -251,7 +253,7 @@ footer small{color:var(--muted)}
       <div class="eyebrow" data-en="Why Qamra" data-ar="ليه قمرة">Why Qamra</div>
       <h2 data-en="The camera was born in a dark room." data-ar="الكاميرا اتولدت في أوضة ضلمة.">The camera was born in a dark room.</h2>
       <p class="lead ar-able" data-en="A thousand years ago, Ibn al-Haytham showed that light passing through a small hole into a dark room paints the world upside down on the wall. That room was called the qamra." data-ar="من ألف سنة، ابن الهيثم أثبت إن النور لما يدخل من فتحة صغيرة لأوضة ضلمة، بيرسم الدنيا مقلوبة على الحيطة. الأوضة دي اسمها القمرة.">A thousand years ago, Ibn al-Haytham showed that light passing through a small hole into a dark room paints the world upside down on the wall. That room was called the qamra.</p>
-      <div class="word"><span class="w1 g">قمرة</span><span class="arrow">→</span><span class="w2">Camera</span></div>
+      <div class="word"><span class="w2 g" data-en="Qamra" data-ar="قمرة">Qamra</span><span class="arrow">→</span><span class="w2">Camera</span></div>
       <p class="lead ar-able" data-en="Qamra is a Cairo production house that still works that way: light in, story out." data-ar="قمرة بيت إنتاج في القاهرة لسه بيشتغل بنفس الطريقة: نور بيدخل، وحكاية بتطلع.">Qamra is a Cairo production house that still works that way: light in, story out.</p>
       <p class="founder" data-en="Founded by Mohamed Tarek, photographer, filmmaker and host of Tarek’s Take." data-ar="أسسها محمد طارق، مصور وصانع أفلام ومقدم Tarek’s Take.">Founded by Mohamed Tarek, photographer, filmmaker and host of Tarek’s Take.</p>
     </div>
@@ -265,12 +267,14 @@ footer small{color:var(--muted)}
       <div class="eyebrow" data-en="Work with us" data-ar="اشتغل معانا">Work with us</div>
       <h2 data-en="Let’s make something." data-ar="يلا نعمل حاجة.">Let’s make something.</h2>
       <div class="ways">
-        <div class="way"><div><small>EMAIL</small><span class="v" id="mail">info@shotonqamra.com</span></div><button class="copy" type="button" data-copy="mail" data-en="Copy" data-ar="نسخ">Copy</button></div>
-        <div class="way"><div><small>WHATSAPP</small><span class="v" id="wa">+20 101 583 4694</span></div><div style="display:flex;gap:8px"><a class="copy" style="text-decoration:none" href="https://wa.me/201015834694" target="_blank" rel="noopener" data-en="Chat" data-ar="راسلنا">Chat</a><button class="copy" type="button" data-copy="wa" data-en="Copy" data-ar="نسخ">Copy</button></div></div>
-        <div class="way"><div><small>INSTAGRAM · TIKTOK · YOUTUBE</small><span class="v">@shotonqamra</span></div></div>
+        <div class="way"><div><small data-en="EMAIL" data-ar="الإيميل">EMAIL</small><span class="v" id="mail">info@shotonqamra.com</span></div><button class="copy" type="button" data-copy="mail" data-en="Copy" data-ar="نسخ">Copy</button></div>
+        <div class="way"><div><small data-en="WHATSAPP" data-ar="واتساب">WHATSAPP</small><span class="v" id="wa">+20 101 583 4694</span></div><div style="display:flex;gap:8px"><a class="copy" style="text-decoration:none" href="https://wa.me/201015834694" target="_blank" rel="noopener" data-en="Chat" data-ar="راسلنا">Chat</a><button class="copy" type="button" data-copy="wa" data-en="Copy" data-ar="نسخ">Copy</button></div></div>
+        <div class="way"><div><small data-en="INSTAGRAM · TIKTOK · YOUTUBE" data-ar="إنستجرام · تيك توك · يوتيوب">INSTAGRAM · TIKTOK · YOUTUBE</small><span class="v">@shotonqamra</span></div></div>
       </div>
     </div>
-    <form id="form" novalidate>
+    <form id="form" action="https://formspree.io/f/xeaglawb" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="New request from shotonqamra.com">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
       <label><span data-en="Name" data-ar="الاسم">Name</span><input id="f-name" name="name" required autocomplete="name"></label>
       <label><span data-en="Email or WhatsApp" data-ar="الإيميل أو الواتساب">Email or WhatsApp</span><input id="f-contact" name="contact" required></label>
       <label><span data-en="What do you need?" data-ar="محتاج إيه؟">What do you need?</span>
@@ -282,7 +286,7 @@ footer small{color:var(--muted)}
         </select></label>
       <label><span data-en="Tell us about the project" data-ar="احكيلنا عن المشروع">Tell us about the project</span><textarea id="f-msg" name="message"></textarea></label>
       <button class="btn primary" type="submit" data-en="Send" data-ar="ابعت">Send</button>
-      <p class="note" data-en="Preview: this form isn't connected yet, so messages aren't sent." data-ar="نسخة تجريبية: الفورم لسه مش متوصل، فالرسايل مش بتتبعت.">Preview: this form isn't connected yet, so messages aren't sent.</p>
+      <p class="note" data-en="We usually reply within a day." data-ar="بنرد عادةً خلال يوم.">We usually reply within a day.</p>
       <p class="ok" id="ok" hidden></p>
     </form>
   </div>
@@ -292,12 +296,12 @@ footer small{color:var(--muted)}
   <div class="wrap">
     <a class="mark" href="#top" aria-label="Back to top"><span class="g">q</span>amra<span class="dot"></span></a>
     <div class="socials">
-      <a href="https://www.instagram.com/shotonqamra" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.tiktok.com/@shotonqamra" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://www.youtube.com/@shotonqamra" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/shotonqamra" target="_blank" rel="noopener" data-en="Instagram" data-ar="إنستجرام">Instagram</a>
+      <a href="https://www.tiktok.com/@shotonqamra" target="_blank" rel="noopener" data-en="TikTok" data-ar="تيك توك">TikTok</a>
+      <a href="https://www.youtube.com/@shotonqamra" target="_blank" rel="noopener" data-en="YouTube" data-ar="يوتيوب">YouTube</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener" data-en="Facebook" data-ar="فيسبوك">Facebook</a>
     </div>
-    <small>© 2026 Qamra · Light in. Story out.</small>
+    <small data-en="© 2026 Qamra · Light in. Story out." data-ar="© 2026 قمرة · نور بيدخل، وحكاية بتطلع.">© 2026 Qamra · Light in. Story out.</small>
   </div>
 </footer>
 
@@ -349,7 +353,18 @@ footer small{color:var(--muted)}
     var ok=document.getElementById('ok'), ar=root.lang==='ar';
     var name=document.getElementById('f-name').value.trim(), c=document.getElementById('f-contact').value.trim();
     if(!name||!c){ ok.textContent=ar?'اكتب اسمك وطريقة نتواصل بيها معاك.':'Add your name and a way to reach you.'; ok.hidden=false; return; }
-    ok.textContent=ar?'شكرًا يا '+name+'! (نسخة تجريبية: الرسالة لسه مش بتتبعت)':'Thanks, '+name+'! (Preview: the message wasn’t sent yet)'; ok.hidden=false;
+    var form=e.target, btn=form.querySelector('button[type=submit]');
+    btn.disabled=true; ok.textContent=ar?'بنبعت…':'Sending…'; ok.hidden=false;
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(!r.ok) throw new Error('bad');
+        ok.textContent=ar?'شكرًا يا '+name+'! رسالتك وصلت، وهنرد عليك قريب.':'Thanks, '+name+'! Your message is in. We’ll get back to you soon.';
+        form.reset();
+      })
+      .catch(function(){
+        ok.textContent=ar?'الرسالة ماتبعتتش. ابعتلنا على الواتساب أو الإيميل اللي فوق.':'The message didn’t go through. Please reach us on WhatsApp or email above.';
+      })
+      .then(function(){ btn.disabled=false; });
   });
 })();
 </script>
