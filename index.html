@@ -3,12 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Qamra: an Egyptian photography, film and production house. Home of Tarek's Take.">
-<meta property="og:title" content="Qamra">
-<meta property="og:description" content="Light in. Story out. An Egyptian production house.">
-<meta property="og:image" content="https://shotonqamra.com/img/ep1.jpg">
+<meta name="description" content="Qamra is an Egyptian production house for photography, film and production. Home of Tarek's Take.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="copyright" content="Qamra">
+<meta name="theme-color" content="#160B22">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qamra">
+<meta property="og:url" content="https://shotonqamra.com/">
+<meta property="og:title" content="Qamra · Light in. Story out.">
+<meta property="og:description" content="An Egyptian production house for photography, film and production.">
+<meta property="og:image" content="https://shotonqamra.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="qamra. Light in. Story out.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://shotonqamra.com/img/og.jpg">
 <link rel="canonical" href="https://shotonqamra.com/">
-<title>Qamra</title>
+<title>Qamra · Light in. Story out.</title>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&family=Tajawal:wght@500;700;800;900&display=swap">
 <style>
@@ -99,6 +112,8 @@ nav ul a:hover,nav ul a:focus-visible{color:var(--text)}
 .eps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
 .ep{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#1b0d2b;text-decoration:none;display:flex;flex-direction:column}
 .ep img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}
+img{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;pointer-events:none}
+.thumb::after{content:"";position:absolute;inset:0}
 .ep .meta{padding:12px 14px 14px}
 .ep .no{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.14em;color:var(--muted)}
 .ep .ti{font-weight:800;font-size:17px;line-height:1.35}
@@ -328,12 +343,14 @@ footer small{color:var(--muted)}
       <a href="https://www.youtube.com/@shotonqamra" target="_blank" rel="noopener" data-en="YouTube" data-ar="يوتيوب">YouTube</a>
       <a href="https://www.facebook.com/shotonqamra.eg/" target="_blank" rel="noopener" data-en="Facebook" data-ar="فيسبوك">Facebook</a>
     </div>
-    <small data-en="© 2026 Qamra · Light in. Story out." data-ar="© 2026 قمرة · نور بيدخل، وحكاية بتطلع.">© 2026 Qamra · Light in. Story out.</small>
+    <small data-en="© 2026 Qamra. All rights reserved. All photos and videos are the property of Qamra." data-ar="© 2026 قمرة. كل الحقوق محفوظة. كل الصور والفيديوهات ملك لقمرة.">© 2026 Qamra. All rights reserved. All photos and videos are the property of Qamra.</small>
   </div>
 </footer>
 
 <script>
 (function(){
+  document.addEventListener('contextmenu',function(e){ if(e.target.closest('img,.thumb,.portrait,.ep')) e.preventDefault(); });
+  document.addEventListener('dragstart',function(e){ if(e.target.tagName==='IMG') e.preventDefault(); });
   var root=document.documentElement, btn=document.getElementById('lang');
   function setLang(l){
     root.lang=l; root.dir=(l==='ar')?'rtl':'ltr';
