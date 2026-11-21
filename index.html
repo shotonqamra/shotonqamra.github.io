@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Qamra: photography, film and production in Cairo. Home of Tarek's Take.">
+<meta name="description" content="Qamra: an Egyptian photography, film and production house. Home of Tarek's Take.">
 <meta property="og:title" content="Qamra">
-<meta property="og:description" content="Light in. Story out. Photography · Film · Production · Cairo">
+<meta property="og:description" content="Light in. Story out. An Egyptian production house.">
 <meta property="og:image" content="https://shotonqamra.com/img/ep1.jpg">
 <link rel="canonical" href="https://shotonqamra.com/">
 <title>Qamra</title>
@@ -115,6 +115,9 @@ nav ul a:hover,nav ul a:focus-visible{color:var(--text)}
 .portrait{border-radius:26px;overflow:hidden;border:1px solid var(--line);aspect-ratio:3/4;background:#2a1248}
 .portrait img{width:100%;height:100%;object-fit:cover;display:block}
 .founder{margin-top:14px;color:var(--muted);font-size:15px}
+.dept{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.dept span{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:700;color:var(--soft);background:var(--card)}
+.portrait.room{background:#160B22}
 @media (max-width:860px){.about{grid-template-columns:1fr}.portrait{max-width:420px}}
 
 /* contact */
@@ -172,7 +175,7 @@ footer small{color:var(--muted)}
   <div class="wrap">
     <h1 class="logo" aria-label="qamra"><span class="q">q</span><span class="amra">amra</span><span class="dot"></span></h1>
     <div class="tag" data-en="Light in. Story out." data-ar="نور بيدخل، وحكاية بتطلع.">Light in. Story out.</div>
-    <div class="sub" data-en="PHOTOGRAPHY · FILM · PRODUCTION · CAIRO" data-ar="تصوير · أفلام · إنتاج · القاهرة">PHOTOGRAPHY · FILM · PRODUCTION · CAIRO</div>
+    <div class="sub" data-en="AN EGYPTIAN PRODUCTION HOUSE" data-ar="بيت إنتاج مصري">AN EGYPTIAN PRODUCTION HOUSE</div>
     <div class="cta">
       <a class="btn primary" href="#contact" data-en="Book a shoot" data-ar="احجز تصوير">Book a shoot</a>
       <a class="btn" href="#show" data-en="Watch Tarek’s Take" data-ar="اتفرج على Tarek’s Take">Watch Tarek’s Take</a>
@@ -184,7 +187,7 @@ footer small{color:var(--muted)}
   <div class="wrap">
     <div class="eyebrow" data-en="What we make" data-ar="بنعمل إيه">What we make</div>
     <h2 class="ar-able" data-en="Every frame starts in the dark." data-ar="كل كادر بيبدأ من الضلمة.">Every frame starts in the dark.</h2>
-    <p class="lead ar-able" data-en="From the first frame to the final grade and sound, made by one eye, end to end." data-ar="من أول لقطة لحد الجريد والصوت، شغل بعين واحدة من الأول للآخر.">From the first frame to the final grade and sound, made by one eye, end to end.</p>
+    <p class="lead ar-able" data-en="From the first frame to the final grade and sound, all under one roof." data-ar="من أول لقطة لحد الجريد والصوت، كله تحت سقف واحد.">From the first frame to the final grade and sound, all under one roof.</p>
     <div class="cols">
       <article class="svc">
         <svg class="ic" viewBox="0 0 52 52" aria-hidden="true"><defs><linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFCC78"/><stop offset="1" stop-color="#FF6CAC"/></linearGradient></defs><rect x="3" y="12" width="46" height="34" rx="9" fill="none" stroke="url(#a1)" stroke-width="3.5"/><circle cx="26" cy="29" r="9" fill="none" stroke="url(#a1)" stroke-width="3.5"/><rect x="16" y="6" width="14" height="7" rx="2" fill="url(#a1)"/></svg>
@@ -229,7 +232,7 @@ footer small{color:var(--muted)}
   <div class="wrap">
     <div class="show-head">
       <div>
-        <div class="eyebrow" data-en="A Qamra show" data-ar="برنامج من قمرة">A Qamra show</div>
+        <div class="eyebrow" data-en="A Qamra Original" data-ar="إنتاج قمرة">A Qamra Original</div>
         <div class="tt">Tarek’s <span class="g">Take</span></div>
         <p class="lead ar-able" style="margin-top:16px" data-en="Camera basics, one secret at a time. Short Egyptian-Arabic lessons you'll understand in a minute and use the same day." data-ar="أساسيات الكاميرا والتصوير، سر واحد في كل حلقة. حلقات قصيرة بالمصري، تفهمها في دقيقة وتطبقها في نفس اليوم.">Camera basics, one secret at a time. Short Egyptian-Arabic lessons you'll understand in a minute and use the same day.</p>
       </div>
@@ -254,10 +257,23 @@ footer small{color:var(--muted)}
       <h2 data-en="The camera was born in a dark room." data-ar="الكاميرا اتولدت في أوضة ضلمة.">The camera was born in a dark room.</h2>
       <p class="lead ar-able" data-en="A thousand years ago, Ibn al-Haytham showed that light passing through a small hole into a dark room paints the world upside down on the wall. That room was called the qamra." data-ar="من ألف سنة، ابن الهيثم أثبت إن النور لما يدخل من فتحة صغيرة لأوضة ضلمة، بيرسم الدنيا مقلوبة على الحيطة. الأوضة دي اسمها القمرة.">A thousand years ago, Ibn al-Haytham showed that light passing through a small hole into a dark room paints the world upside down on the wall. That room was called the qamra.</p>
       <div class="word"><span class="w2 g" data-en="Qamra" data-ar="قمرة">Qamra</span><span class="arrow">→</span><span class="w2">Camera</span></div>
-      <p class="lead ar-able" data-en="Qamra is a Cairo production house that still works that way: light in, story out." data-ar="قمرة بيت إنتاج في القاهرة لسه بيشتغل بنفس الطريقة: نور بيدخل، وحكاية بتطلع.">Qamra is a Cairo production house that still works that way: light in, story out.</p>
-      <p class="founder" data-en="Founded by Mohamed Tarek, photographer, filmmaker and host of Tarek’s Take." data-ar="أسسها محمد طارق، مصور وصانع أفلام ومقدم Tarek’s Take.">Founded by Mohamed Tarek, photographer, filmmaker and host of Tarek’s Take.</p>
+      <p class="lead ar-able" data-en="Qamra is an Egyptian production house that still works that way: light in, story out." data-ar="قمرة بيت إنتاج مصري لسه بيشتغل بنفس الطريقة: نور بيدخل، وحكاية بتطلع.">Qamra is an Egyptian production house that still works that way: light in, story out.</p>
+      <div class="dept">
+        <span data-en="Direction" data-ar="إخراج">Direction</span><span data-en="Cinematography" data-ar="تصوير سينمائي">Cinematography</span><span data-en="Lighting" data-ar="إضاءة">Lighting</span><span data-en="Editing" data-ar="مونتاج">Editing</span><span data-en="Colour" data-ar="كولور جريدنج">Colour</span><span data-en="Sound" data-ar="صوت">Sound</span><span data-en="Motion" data-ar="موشن جرافيك">Motion</span>
+      </div>
     </div>
-    <div class="portrait"><img src="img/portrait.jpg" alt="Mohamed Tarek, founder of Qamra" loading="lazy"></div>
+    <div class="portrait room" aria-label="A dark room with a pinhole: light enters and the image lands upside down" role="img">
+      <svg viewBox="0 0 300 400" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFCC78"/><stop offset="1" stop-color="#FF6CAC"/></linearGradient><radialGradient id="rl" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#3E1C68"/><stop offset="1" stop-color="#160B22"/></radialGradient></defs>
+      <rect width="300" height="400" fill="url(#rl)"/>
+      <rect x="110" y="110" width="170" height="180" rx="14" fill="#0B0512" stroke="#E8DEFF" stroke-width="4"/>
+      <rect x="106" y="192" width="8" height="16" fill="#0B0512"/>
+      <g transform="translate(48,168)"><circle r="9" fill="#FFCC78"/><path d="M0 9 V52 M-19 26 H19 M0 52 L-14 82 M0 52 L14 82" stroke="url(#rg)" stroke-width="6" stroke-linecap="round" fill="none"/></g>
+      <line x1="48" y1="159" x2="262" y2="262" stroke="#FFCC78" stroke-width="2" opacity=".7"/>
+      <line x1="62" y1="250" x2="262" y2="138" stroke="#FFCC78" stroke-width="2" opacity=".7"/>
+      <circle cx="110" cy="200" r="5" fill="#fff"/>
+      <g transform="translate(250,200) rotate(180)"><circle cy="-48" r="8" fill="#FFCC78"/><path d="M0 -39 V3 M-17 -22 H17 M0 3 L-12 30 M0 3 L12 30" stroke="url(#rg)" stroke-width="5" stroke-linecap="round" fill="none"/></g>
+      <text x="150" y="345" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="700" font-size="13" letter-spacing="3" fill="#BEB0D7">CAMERA OBSCURA</text></svg>
+    </div>
   </div>
 </section>
 
